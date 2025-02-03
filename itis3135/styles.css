@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    background-color: #dfdfdf
+}
+h2{
+    font-size: 180%;
+    margin: 5px auto 5px auto;
+}
+.sub{
+    margin-top: 5px;
+}
+footer {
+    padding: 0 40px 0 40px;
+    margin-top: 90%;
+}
