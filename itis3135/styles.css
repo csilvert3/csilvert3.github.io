@@ -13,3 +13,12 @@ footer {
     padding: 0 40px 0 40px;
     margin-top: 90%;
 }
+
+.intro-pic {
+    padding-top: 25px;
+    width: 300px;
+}
+
+.intro-list {
+    text-align: left;
+}
