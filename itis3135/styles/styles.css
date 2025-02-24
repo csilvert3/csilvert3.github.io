@@ -1,0 +1,39 @@
+a:visited,a:link{
+    color:darkcyan;
+}
+
+*{
+    margin: 5px;
+    text-align: center;
+    background-color: #dddddd;
+}
+h2{
+    font-size: 180%;
+    margin: 5px auto 5px auto;
+}
+.sub{
+    margin-top: 5px;
+}
+footer {
+    padding: 0 40px 0 40px;
+    margin-top: 90%;
+}
+
+.intro-pic {
+    padding: 25px;
+    width: 300px;
+}
+
+.intro-list > *{
+    text-align: left !important;
+}
+
+.nav2{
+    font-size: 80%;
+}
+
+.good-site > ul , .bad-site > ul, .good-site > ul > *, .bad-site > ul >*{
+    text-align: left;
+}
+
+
