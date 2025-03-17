@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Reset default figure and figcaption margins/paddings */
+            figure {
+                margin: 0;
+                padding: 0;
+            }
+            figcaption {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: #2C2F33;
+                color: #E4E4E4;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                font-size: 16px; 
+            }
+
+            h1, h2, h3, header, footer {
+                color: #FF6B6B;
+                text-align: center;
+                margin: 20px auto;
+                padding: 10px;
+                border-bottom: 3px solid #F9A826;
+                width: fit-content;
+            }
+
+            a {
+                color: #F9A826;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: #FF6B6B;
+            }
+
+            @media screen and (min-width: 1024px) {
+                body {
+                    font-size: 18px;
+                }
+            }
+
+            @media screen and (max-width: 1023px) {
+                body {
+                    font-size: 13px;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                body {
+                    font-size: 14px;
+                }
+                .top-img-block {
+                    flex: 0 0 100%; 
+                }
+
+                .caption {
+                    position: static; 
+                    bottom: auto; 
+                    margin-top: 10px; 
+                    text-align: center; 
+                }
+            }
+
+            footer, header {
+                background-color: #23272A;
+                color: #AEB6BF;
+                text-align: center;
+                padding: 15px;
+                margin-top: 40px;
+                border-top: 3px solid #F9A826;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 0px 30px 15px 30px;
+                margin: 30px auto;
+                max-width: 900px;
+                background-color: #36393F;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: justify;
+            }
+
+            main p {
+                margin-bottom: 20px;
+                padding: 0 10px;
+            }
+
+            .top-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 20px;
+                max-width: 990px;
+                margin: 0 auto;
+            }
+
+            .top-paragraph {
+                flex: 1;
+                margin: 0;
+            }
+
+            .top-img-block, .top-img-block-1800 {
+                position: relative;
+                margin-bottom: 40px;
+            }
+
+            .top-img-block {
+                flex: 0 0 30%;
+            }
+
+            .top-img-block-1800 {
+                flex: 0 0 50%;
+            }
+
+            .top-img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border: 3px solid #F9A826;
+                border-radius: 8px;
+            }
+
+            figcaption {
+                font-size: 14px;
+                color: #E4E4E4;
+                font-style: italic;
+                padding: 0 10px;
+                text-align: right;
+                box-sizing: border-box;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .caption {
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+                width: 100%;
+                font-size: 14px;
+                color: #E4E4E4;
+                font-style: italic;
+                padding: 0 10px;
+                text-align: right;
+                box-sizing: border-box;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            footer nav a {
+                margin: 7px;
+            }
+
+            footer nav a:hover {
+                color: #FF6B6B;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+
+            footer em a {
+                color: #F9A826;
+            }
+
+            footer em a:hover {
+                color: #FF6B6B;
+            }
+
+            .when .top-wrap:nth-child(2) {
+                flex-direction: row-reverse;  
+                justify-content: flex-start; 
+            }
+
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                flex: 1; 
+            }
+
+            .ai-list {
+                margin-top: 10px; 
+                padding-left: 20px;
+            }
+
+            section {
+                display: none;
+                }
+
+            .active {
+                display: block;
+            }
+        </style>
+        <title>Hobby Project - Fashion</title>
+    </head>
+    <body>
+        <h1>Hobby Project - Fashion</h1>
+        <header>    
+            <nav>
+                <a href="javascript:void(0)" onclick="showSection('who')">Home</a> |
+                <a href="javascript:void(0)" onclick="showSection('what')">What</a> | 
+                <a href="javascript:void(0)" onclick="showSection('when')">When</a> |
+                <a href="javascript:void(0)" onclick="showSection('where')">Where</a> |
+                <a href="javascript:void(0)" onclick="showSection('how')">How</a> |
+                <a href="javascript:void(0)" onclick="showSection('why')">Why</a> |
+                <a href="javascript:void(0)" onclick="showSection('ai')">AI</a>
+            </nav>
+        </header>
+        <main>
+            <section id="who">
+                <h2>About Me</h2>
+                <div class="top-wrap">
+                    <p class="top-paragraph">
+                        I am Chris Silverthorne, I am a student at UNCC Charotte in my Junior year and I am studying Computer Science with a concentration in Cyber security. I was born in Cary and have lived in North Carolina all my life, when I graduate I hope to move to Washington, D.C.
+                    </p>  
+                    <figure class="top-img-block">
+                        <img class="top-img" src="images/intropic.jpg" alt="Picture of me">
+                        <figcaption class="caption">Me at the Tarot Garden in Tuscany, Italy</figcaption>
+                    </figure>
+                </div>
+                <p class="bottom-paragraph">
+                    For my midterm Hobby project I have chosen to focus on fashion as the topic as it is the hobby I am most invested in. Fashion as a concept is something we interact with every single day whether we chose too or not and I personally believe that the way someone chooses to present themselves can say a lot about them.
+                </p>
+            </section>
+            
+            <section id="what">
+                <h2>What is it?</h2>
+                <p>
+                    Fashion and clothing in general is one of the oldest human creative outlets, since ancient times many human beings have sought new ways to express themselves through their outfits. Fashion is a hobby for me in more than one way, it is something that I and everyone else actively participate in everyday just by getting dressed. It is also a hobby to me because I am invested in it's news cycle and updates.
+                </p>
+                <div class="top-wrap">
+                    <p class="top-paragraph">
+                        My most recent purchases involving this hobby include a pair of SL37M sneakers as seen on the Saint Laurent Paris Spring/Summer 2016 runway and a black hoodie with grosgrain accents from the Saint Laurent Paris Fall/Winter 2013 season.
+                    </p>
+                    <figure class="top-img-block">
+                        <img class="top-img" src="images/sl37.jpg" alt="white sneaker">
+                        <figcaption class="caption">Saint Laurent Paris SS16 Sneakers</figcaption>
+                    </figure>
+                    <figure class="top-img-block">
+                        <img class="top-img what" src="images/hoodie.jpg" alt="white sneaker">
+                        <figcaption class="caption">Saint Laurent Paris FW13 Hoodie</figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+            <section id="when">
+                <h2>When is it?</h2>
+                <div class="top-wrap">
+                    <p class="top-paragraph">
+                        I was first introduced to fashion as a hobby in 2020 during the COVID-19 pandemic. The music I was listening to at the time made numerous references to fashion brands such as Number (N)ine and Rick Owens. While those comapnies are less of an interest to me they helped work as a gateway to me getting interested in fashion as a hobby. As of recent the brands I am personally most interested in are Dior Homme, Saint Laurent Paris, Celine, Dolce and Gabanna's D&G difusion line and Acne Studios.
+                    </p>
+                    <figure class="top-img-block">
+                        <img class="top-img" src="images/fw05.png" alt="white sneaker">
+                        <figcaption class="caption">Dior Homme FW05 Tee</figcaption>
+                    </figure>
+                </div>
+                <div class="top-wrap">
+                    <figure class="top-img-block">
+                        <img class="top-img what" src="images/fw15.png" alt="white sneaker">
+                        <figcaption class="caption">Saint Laurent Paris FW15 Boots</figcaption>
+                    </figure>
+                    <p class="top-paragraph">
+                        Most companies release runway collections on a seasonal schedule. The most common schedule is twice a year with a Fall/Winter season and a Spring/Summer season. Two of my personal favorite runway seasons are Dior Homme Fall/Winter 2005 and Saint Laurent Paris Fall/Winter 2015. I have chosen two pieces of clothing from my collection to highlight these seasons.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="where">
+                <h2>Where is it?</h2>
+                <p>
+                    Fashion is everywhere around us in our daily lives regardless of how aware we are of it. Everyday everyone makes a choice of what to wear often most centered around where they will be going. Someone going to work at their office job is going to dress very differently than someone going to the skate park.
+                </p>
+                <figure class="top-img-block">
+                    <img class="top-img" src="images/nyc.jpg" alt="New York City Skyline">
+                    <figcaption class="caption">New York City Skyline</figcaption>
+                </figure>
+                <p>
+                    Fashion companies hold runway shows in a number of cities but the most notorious cities in the fashion world are Paris and New York City. These two cities both hold their own fashion weeks twice a year where the majority of brands will hold their seasonal runway shows.
+                </p>
+            </section>
+            
+            <section id="how">
+                <h2>How is it done?</h2>
+                <p>
+                    Fashion is something everyone participates in daily, however most people would not consider it a hobby of theirs. In my opinion for fashion to become a hobby for someone they have to be more interested than the average person who mostly just wears clothes for utility purposes.
+                </p>
+                <div class="top-wrap">
+                    <p class="top-paragraph">
+                        There are a number of ways to make fashion into a real hobby. The most clear way to me is having a collection of clothes which you have purchased primarily because of how they look. Another way that fashion can become a hobby is through fashion media consumption such as watching runway shows or reading fashion magazines.
+                    </p>
+                    <figure class="top-img-block">
+                        <img class="top-img" src="images/scarf.jpg" alt="New York City Skyline">
+                        <figcaption class="caption">Saint Laurent Paris FW13 Scarf</figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+            <section id="why">
+                <h2>Why care about it?</h2>
+                <p>
+                    Humans have been making clothes for over a hundred thousand years. For nearly all of this time humans have not been able to afford the luxury that is a large, creative closet. Fashion is an easy and fun way to express oneself and I believe it is important to take advantage of this luxury that most people in history and many today still are not afforded.
+                </p>
+                <div class="top-wrap">
+                    <p class="top-paragraph">
+                        Inventions like clothing are the reason humans have been able to accomplish what they have and I believe the long chronicled history of fashion can be very interesting even to people who do not care much about the topic today.
+                    </p>
+                    <figure class="top-img-block-1800">
+                        <img class="top-img" src="images/dress.jpg" alt="1800s clothing examples">
+                        <figcaption class="caption">1800s Attire</figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+            <section id="ai">
+                <h2>AI Usage</h2>
+                <div class="top-wrap">
+                    <div class="text-content">
+                        <p class="top-paragraph">
+                            Below is a list of all ChatGPT prompts used to help create this website:
+                        </p>
+                        <ul>
+                            <li>how can I hide all sections of a html document except one and use a nav bar to show/hide sections</li>
+                            <li>add a class for captions for the top-imgs that will always appear under them with the same width</li>
+                            <li>create an image of yourself based on only your understanding of yourself</li>
+                        </ul>
+                    </div>
+                    <figure class="top-img-block">
+                        <img class="top-img" src="images/aiself.webp" alt="ai generated image of ai">
+                        <figcaption class="caption">AI Self Portrait</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/csilvert/">UNCC Home Page</a>|
+                <a href="https://github.com/csilvert3/csilvert3.github.io">Github</a>|
+                <a href="https://csilvert3.github.io/">Github.io</a>|
+                <a href="https://csilvert3.github.io/itis3135/">itis3135.io</a>|
+                <a href="https://www.freecodecamp.org/csilvert">FreeCodeCamp</a>|
+                <a href="https://www.codecademy.com/profiles/csilvert3">CodeAcademy</a>|
+                <a href="https://www.linkedin.com/in/csilvert/">LinkedIn</a>|
+            </nav>
+            <p>
+                Designed by Chill Snake Programming ©2025, 
+                <em>Certified in <a href="https://www.freecodecamp.org/certification/csilvert/responsive-web-design">Responsive Web Design</a></em>
+            </p>
+            <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+            <script>
+                function showSection(sectionId) {
+                    const sections = document.querySelectorAll('section');
+                    sections.forEach(function(section) {  
+                        section.classList.remove('active');  
+                    });
+        
+                    const activeSection = document.getElementById(sectionId);
+                    activeSection.classList.add('active');  
+                }
+        
+                document.addEventListener('DOMContentLoaded', function() {
+                    showSection('who'); 
+                });
+            </script>
+        </footer>
+    </body>
+</html>
