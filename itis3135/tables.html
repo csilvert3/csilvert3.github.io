@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./styles/styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Chill Snake</title>
+    </head>
+    <body>
+        <h1>Chill Snake || Whimsical Company Tables</h1>
+        <header>
+            <div data-include=".\components\headerNav.html"></div>
+        </header>
+        <main>
+            <h2>Chill Snake Cables Tables</h2> 
+            <div class="divider"></div>
+            <h3>My Tabular Data</h3>
+            <div class="table-data">
+                <ol>
+                    <li>Chris Silverthorne - csilvert@uncc.edu</li>
+                    <li>Frederic Ellsworth - fredells@gmail.com</li>
+                    <li>Linda Pravdin - linprav@gmail.com</li>
+                    <li>Kelly Shaddock - kellyshad@gmail.com</li>
+                    <li>Arthur Remis - aremis@gmail.com</li>
+                    <li>Naomi Sentzke - nasentz@gmail.com</li>
+                    <li>Jerome Cable - jercab@gmail.com</li>
+                    <li>Douglas Rutland - dugrut@gmail.com</li>
+                </ol>
+            </div>
+            <div class="divider"></div>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Chris Silverthorne</td>
+                <td>csilvert@uncc.edu</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Frederic Ellsworth</td>
+                <td>fredells@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Linda Pravdin</td>
+                <td>linprav@gmail.com</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Kelly Shaddock</td>
+                <td>kellyshad@gmail.com</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Arthur Remis</td>
+                <td>aremis@gmail.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Naomi Sentzke</td>
+                <td>nasentz@gmail.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Jerome Cable</td>
+                <td>jercab@gmail.com</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Douglas Rutland</td>
+                <td>dugrut@gmail.com</td>
+                <td>3</td>
+            </tr>
+        </table>  
+        <div class="divider"></div>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table class="complex-table" >
+                <tr>
+                    <th id="category" scope="col">Category</th>
+                    <th id="name" scope="col">Name</th>
+                    <th id="email" scope="col">Email</th>
+                    <th id="years" scope="col">Years of Service</th>
+                    <th id="salary" scope="col">Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td headers="category">Administration</td>
+                    <td headers="name">Chris Silverthorne</td>
+                    <td headers="email">csilvert@uncc.edu</td>
+                    <td headers="years">12</td>
+                    <td headers="salary">$8000</td>
+                </tr>
+                <tr>
+                    <td headers="category" rowspan="1">Marketing</td>
+                    <td headers="name">Frederic Ellsworth</td>
+                    <td headers="email">fredells@gmail.com</td>
+                    <td headers="years">5</td>
+                    <td headers="salary">$5200</td>
+                </tr>
+                <tr>
+                    <td headers="category">Sales</td>
+                    <td headers="name">Linda Pravdin</td>
+                    <td headers="email">linprav@gmail.com</td>
+                    <td headers="years">9</td>
+                    <td headers="salary">$4800</td>
+                </tr>
+                <tr>
+                    <td headers="category" rowspan="2">Development</td>
+                    <td headers="name">Kelly Shaddock</td>
+                    <td headers="email">kellyshad@gmail.com</td>
+                    <td headers="years">11</td>
+                    <td headers="salary">$6000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Arthur Remis</td>
+                    <td headers="email">aremis@gmail.com</td>
+                    <td headers="years">8</td>
+                    <td headers="salary">$6200</td>
+                </tr>
+                <tr>
+                    <td headers="category">HR</td>
+                    <td headers="name">Naomi Sentzke</td>
+                    <td headers="email">nasentz@gmail.com</td>
+                    <td headers="years">6</td>
+                    <td headers="salary">$5000</td>
+                </tr>
+                <tr>
+                    <td headers="category">Operations</td>
+                    <td headers="name">Jerome Cable</td>
+                    <td headers="email">jercab@gmail.com</td>
+                    <td headers="years">12</td>
+                    <td headers="salary">$5500</td>
+                </tr>
+                <tr>
+                    <td headers="category">Finance</td>
+                    <td headers="name">Douglas Rutland</td>
+                    <td headers="email">dugrut@gmail.com</td>
+                    <td headers="years">3</td>
+                    <td headers="salary">$4200</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="3">Total Years of Service</th>
+                    <th colspan="2">Total Salary</th>
+                </tr>
+                <tr>
+                    <td colspan="3">Total Years: 66</td>
+                    <td colspan="2">$34100</td>
+                </tr>
+            </table>
+        </figure>
+        </main>
+        <footer>
+            <div data-include=".\components\footer.html"></div>
+        </footer>
+        <script src="/itis3135/scripts/HTMLInclude.js"></script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -2,7 +2,7 @@ a:visited,a:link{
     color:darkcyan;
 }
 
-*{
+html{
     margin: 5px;
     text-align: center;
     background-color: #dddddd;
@@ -29,7 +29,7 @@ footer {
     width: 300px;
 }
 
-.intro-list > *{
+.intro-list > html{
     text-align: left !important;
 }
 
@@ -37,7 +37,7 @@ footer {
     font-size: 80%;
 }
 
-.good-site > ul , .bad-site > ul, .good-site > ul > *, .bad-site > ul >*{
+.good-site > ul , .bad-site > ul, .good-site > ul > html, .bad-site > ul >html{
     text-align: left;
 }
 
@@ -58,6 +58,44 @@ footer {
       font-size: 14px;
     }
   }
-  
+
+table{
+  margin: 0 auto;
+}
+ol {
+  list-style-position: inside;
+  text-align: center;
+}
+.divider{
+  margin: 15px;
+}
+
+.complex-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 1px solid black;
+}
+.complex-table th, .complex-table td {
+  padding: 5px;
+  text-align: center;
+}
+
+.complex-table tr:nth-child(1) {
+  background-color: #4CAF50;
+  color: #f2f2f2;
+}
+
+.complex-table tr:nth-child(2n+2):not(:first-child) {
+  background-color: #f2f2f2;
+}
+
+.complex-table tr:nth-child(2n+3):not(:first-child) {
+  background-color: #b8b8b8;
+}
+
+
 
 
