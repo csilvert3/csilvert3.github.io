@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./styles/styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chill Snake</title>
+    </head>
+    <body>
+        <h1>Chill Snake || BYO Intro</h1>
+        <header>
+            <div data-include=".\components\headerNav.html"></div>
+            <h2>BYO Intro</h2>
+        </header>
+        <main>
+            <h3>Fill out the form below to generate your own introduction page.</h3>
+            <div class="divider"></div>
+            <form id="intro-form">
+                <!-- Name Section -->
+                <label for="name-byo">Name:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="name-byo"
+                        placeholder="Enter your name..."
+                        required
+                    />
+                </div>
+
+                <!-- Mascot Section -->
+                <label for="mascot-byo">Mascot:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="mascot-byo"
+                        placeholder="Enter mascot name..."
+                        required
+                    />
+                </div>
+
+                <!-- Image Section -->
+                <label for="image-byo">Image:</label>
+                <div class="inputs">
+                    <input
+                        type="file"
+                        accept=".png, .jpg, .jpeg"
+                        id="image-byo"
+                        required
+                    />
+                </div>
+
+                <!-- Caption Section -->
+                <label for="caption-byo">Caption:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="caption-byo"
+                        placeholder="Enter image caption..."
+                        required
+                    />
+                </div>
+                <label for="personal-byo">Personal Background:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="personal-byo"
+                        placeholder="Enter personal background..."
+                        required
+                    />
+                </div>
+                <label for="professional-byo">Professional Background:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="professional-byo"
+                        placeholder="Enter professional background..."
+                        required
+                    />
+                </div>
+                <label for="academic-byo">Academic Background:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="academic-byo"
+                        placeholder="Enter academic background..."
+                        required
+                    />
+                </div>
+                <label for="web-dev-byo">Background in Web Development:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="web-dev-byo"
+                        placeholder="Enter background in web development..."
+                        required
+                    />
+                </div>
+                <label for="device-byo">Primary Computer Platform:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="device-byo"
+                        placeholder="Enter primary computer platform..."
+                        required
+                    />
+                </div>
+                <div class="divider">
+                    <label>Classes:</label>
+                    <div id="classList"></div>
+                    <button type="button" onclick="addClass()">Add Class</button>
+                    <button type="button" id="deleteBtn" onclick="deleteClass()" style="display: none;">Delete Last Class</button>
+                </div>
+                <label for="fun-byo">Fun Fact About Yourself:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="fun-byo"
+                        placeholder="Enter fun fact about yourself..."
+                    />
+                </div>
+                <label for="anything-byo">Anything Else You Would Like to Include:</label>
+                <div class="inputs">
+                    <input
+                        type="text"
+                        id="anything-byo"
+                        placeholder="Enter anything..."
+                    />
+                </div>
+                <div class="agree-byo">
+                    <input type="checkbox" id="agree-checkbox" required>
+                    <label for="agree-checkbox">
+                        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="resetForm()">Reset Form</button>
+            </form>
+        </main>
+
+        <footer>
+            <div data-include=".\components\footer.html"></div>
+        </footer>
+
+        <script src="./scripts/survey.js"></script>
+        <script src="./scripts/HTMLInclude.js"></script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </body>
+</html>
