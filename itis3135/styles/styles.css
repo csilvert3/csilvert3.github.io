@@ -169,6 +169,10 @@ textarea {
   background-color: black;
 }
 
+.no-bullet{
+  list-style-type: none;
+}
+
 
 
 
