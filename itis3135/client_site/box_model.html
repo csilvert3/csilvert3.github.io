@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let's Learn CSS - Box Model</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+    <header>
+        <div data-include="./components/header.html"></div>
+    </header>
+    <main>
+    <aside class="sidebar-left">
+      <h2>Box Model</h2>
+      <nav class="table-of-contents">
+        <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#what_is">What is the Box Model?</a></li>
+          <li><a href="#why_use">Why use it?</a></li>
+          <li><a href="#what_can">What can it do?</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="main-content">
+      <img src="./images/Css_box_model.svg" alt="box model example" class="box-top-img">
+    
+      <h2 id="what_is">What is the Box Model?</h2>
+      <p>
+        The CSS Box Model is a fundamental concept that defines how elements are structured and spaced on a webpage.<br><br>
+        Every element in CSS is essentially treated as a rectangular box, and understanding this model helps developers control layout, spacing, and alignment precisely.<br><br>
+        The model consists of four key areas:
+        <br> Content: The actual text or image inside the box.
+        <br> Padding: Clears an area around the content. It’s inside the border.
+        <br> Border: A line that wraps the padding and content.
+        <br> Margin: Clears space outside the border.
+    
+        <br><br>Visualizing the box model helps avoid unexpected layout issues, especially when dealing with spacing between elements. <br><br>
+      </p>
+    
+      <h2 id="why_use">Why use it?</h2>
+      <p>
+        Using the box model effectively allows you to create predictable and structured layouts.<br><br>
+        It helps in:
+        <br>- Controlling spacing between elements
+        <br>- Preventing content overlap
+        <br>- Designing responsive interfaces
+    
+        <br><br>Without a proper understanding of the box model, your elements might push into each other or behave unexpectedly when resized.
+    
+        <br><br>For example, this layout uses padding and margins to space out items properly:
+        <br><br></p>
+        <pre><code>div {
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid #333;
+    }</code></pre><br><br>
+      
+    
+      <h2 id="what_can">What can it do?</h2>
+      <p>
+        The box model allows for a wide range of layout capabilities:<br><br>
+    
+        - Add space inside a container with padding<br>
+        - Separate elements using margin<br>
+        - Style borders to highlight sections<br>
+        - Combine margin, padding, and borders to fine-tune layouts<br><br>
+    
+        Here's an example of a box with customized spacing and a styled border:
+        <br><br></p>
+        <pre><code>.box {
+      padding: 15px;
+      margin: 20px auto;
+      border: 3px dashed blue;
+      width: 300px;
+      text-align: center;
+    }</code></pre>
+    
+        <br><p>This approach gives you visual separation and structure, making your UI cleaner and easier to navigate. <br><br>
+      </p>
+    
+      <h2 id="examples">Examples</h2>
+      
+    </section>
+    
+
+    <aside class="sidebar-right">
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>
+          We work to provide simple introductions to the world of CSS!
+        </p>
+        <a href="about.html">More and Contact Us</a>
+      </div>
+      <nav class="external-nav">
+        <h3>External Resources</h3>
+        <ul>
+          <li><a href="https://www.w3schools.com/css/">W3 Schools CSS</a></li>
+          <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+          <li><a href="https://mybrandnewlogo.com/color-palette-generator">CSS Color Palette Generator</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>
+    <div data-include="./components/footer.html"></div>
+</footer>
+    <script src="./scripts/HTMLInclude.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let's Learn CSS - Design Guides</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+    <header>
+        <div data-include="./components/header.html"></div>
+    </header>
+    <main>
+    <aside class="sidebar-left">
+      <h2>Design Guides</h2>
+      <nav class="table-of-contents">
+        <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#crap">CRAP Principles</a></li>
+          <li><a href="#color-guides">Color Guides</a></li>
+          <li><a href="#positioning">CSS Positioning</a></li>
+          <li><a href="#box-model-intro">Box Model Introduction</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="main-content">
+      <img src="./images/4518966475_ca56503118_b.jpg" alt="css on a screen" class="home-top-img">
+      <h2 id="crap">CRAP Principles</h2>
+      <p>
+        The CRAP principles—Contrast, Repetition, Alignment, and Proximity—are core design concepts used to improve visual communication in web design. <br><br>
+        Contrast helps important elements stand out, while repetition creates consistency by reusing visual styles throughout a site. 
+        Alignment ensures that elements are visually connected and organized, giving a cleaner appearance. 
+        Proximity groups related elements together, helping users understand the relationship between different parts of the content.<br><br>
+      </p>
+    
+      <h2 id="color-guides">Color Guides</h2>
+      <p>
+        Color guides help designers choose effective color palettes that enhance usability and aesthetics. <br><br>
+        Using color theory, complementary and analogous schemes can be built for harmony and contrast. 
+        Tools like the color wheel, accessibility checkers, and contrast ratios are essential when selecting colors that work across devices and for users with visual impairments. 
+        CSS supports defining colors using keywords, HEX codes, RGB, HSL, and more, giving designers flexible ways to style elements.<br><br>
+      </p>
+      <div class="container">
+        <h4>CSS Colors Example:</h4>
+        <button id="randomize-btn">Randomize Colors</button>
+        <button id="reset-btn">Reset Colors</button><br><br>
+      </div>
+
+      <h2 id="positioning">CSS Positioning</h2>
+      <p>
+        CSS positioning allows developers to control exactly where elements appear on a webpage. <br><br>
+        The five primary positioning values are static, relative, absolute, fixed, and sticky. 
+        Each value affects how an element is placed in the flow of the document or relative to its parent or the viewport. 
+        For example, absolute positioning removes the element from the normal flow and positions it based on its nearest positioned ancestor, while fixed keeps it locked to the viewport. 
+        Mastering positioning is key for creating dynamic and responsive layouts. <br><br>
+      </p>
+    
+      <h2 id="box-model-intro">Box Model Introduction</h2>
+      <p>
+        The CSS box model describes how elements are rendered on a webpage. <br><br>
+        Every element is essentially a rectangular box composed of four parts: content, padding, border, and margin. 
+        Understanding how these parts interact is essential for layout and spacing. 
+        For example, padding creates space inside an element, while margin adds space outside. 
+        Misunderstanding the box model can lead to layout bugs, especially when using widths and heights with borders and padding.
+      </p>
+    </section>
+    
+
+    <aside class="sidebar-right">
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>
+          We work to provide simple introductions to the world of CSS!
+        </p>
+        <a href="about.html">More and Contact Us</a>
+      </div>
+      <nav class="external-nav">
+        <h3>External Resources</h3>
+        <ul>
+          <li><a href="https://www.w3schools.com/css/">W3 Schools CSS</a></li>
+          <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+          <li><a href="https://mybrandnewlogo.com/color-palette-generator">CSS Color Palette Generator</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>
+    <div data-include="./components/footer.html"></div>
+</footer>
+    <script src="./scripts/randomizeColors.js"></script>
+    <script src="./scripts/HTMLInclude.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</body>
+</html>

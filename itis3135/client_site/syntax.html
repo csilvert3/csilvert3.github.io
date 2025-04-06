@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let's Learn CSS - Syntax</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div data-include="./components/header.html"></div>
+  </header>
+
+  <main>
+    <aside class="sidebar-left">
+      <h2>CSS Syntax</h2>
+      <nav class="table-of-contents">
+        <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#syntax-overview">Syntax Overview</a></li>
+          <li><a href="#selectors">CSS Selectors</a></li>
+          <li><a href="#declarations">Declarations</a></li>
+          <li><a href="#comments">CSS Comments</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="main-content">
+      <img src="./images/pexels-photo-248515.png" alt="CSS syntax example" class="home-top-img">
+
+      <h2 id="syntax-overview">Syntax Overview</h2>
+      <p>
+        CSS syntax refers to the structured way we write styles to apply to HTML elements. At its core, each rule is composed of a selector and a declaration block. The selector targets the HTML element or elements we want to style, and the declaration block contains one or more declarations enclosed in curly braces. These declarations define the actual styles, such as color, font size, or margin. Each declaration itself is made up of a CSS property, a colon, the value to be assigned to that property, and ends with a semicolon. Learning this format is the foundation of writing effective CSS. <code>h1 { color: red; font-size: 24px; }</code><br><br>
+      </p>
+
+      <h2 id="declarations">Declarations</h2>
+      <p>
+        In CSS, declarations define how the targeted HTML elements should appear. Each declaration follows a consistent format: it starts with the property you want to modify, followed by a colon, then the value you want to assign to that property, and ends with a semicolon. Properties can define visual features like text color, background styles, and borders, or they can manage layout behavior, such as spacing, display types, and positioning. The key to writing good CSS lies in understanding which properties to use and how different values affect the rendered result. Declarations are grouped within curly braces and can be as short as a single line or span multiple lines for clarity. <code>p { margin: 20px; line-height: 1.6; }</code><br><br>
+      </p>
+
+      <h2 id="selectors">CSS Selectors</h2>
+      <p>
+        CSS selectors are essential tools that let us pinpoint exactly which HTML elements to style. There are many types of selectors available. Basic selectors include type selectors that target elements like paragraphs, class selectors that match elements with a specific class, and ID selectors that apply styles to elements with a specific ID. More advanced selectors include attribute selectors, which style elements based on the presence or value of an attribute, as well as pseudo-classes and pseudo-elements which style elements based on state or specific content. The wide range of selectors gives developers powerful tools to write clean, specific, and scalable CSS. <code>.highlight { background-color: yellow; }</code><br><br>
+      </p>
+
+      <h2 id="comments">CSS Comments</h2>
+      <p>
+        CSS comments allow developers to add notes and explanations within their stylesheets. These notes are not displayed in the browser and serve purely as guidance for other developers or for the original author when revisiting code. Comments are enclosed within a specific syntax: they begin with a forward slash and asterisk and end with an asterisk and forward slash. This allows for multi-line comments or short inline comments next to declarations. Comments are especially useful in large projects to label sections, explain complex logic, or temporarily disable rules without deleting them. <code>/* This is a CSS comment */</code>
+      </p>
+    </section>
+
+    <aside class="sidebar-right">
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>
+          We work to provide simple introductions to the world of CSS!
+        </p>
+        <a href="about.html">More and Contact Us</a>
+      </div>
+      <nav class="external-nav">
+        <h3>External Resources</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN CSS Reference</a></li>
+          <li><a href="https://www.w3schools.com/css/css_syntax.asp">W3Schools: CSS Syntax</a></li>
+          <li><a href="https://css-tricks.com/the-css-handbook/">CSS-Tricks Handbook</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>
+    <div data-include="./components/footer.html"></div>
+  </footer>
+  <script src="./scripts/HTMLInclude.js"></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</body>
+</html>
