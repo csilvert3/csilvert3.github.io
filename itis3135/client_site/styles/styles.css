@@ -176,10 +176,10 @@
   }
 
   .home-top-img {
-    width: 100%;              /* Make the image fill the container's width */
-    height: 250px;             /* Maintain aspect ratio */
+    width: 100%;             
+    height: 250px;           
     object-fit: cover;  
-    object-position: 50% 80%;      /* Ensure the image covers the entire container, even if it gets cropped */
+    object-position: 50% 80%;      
   }
 
   .box-top-img {
