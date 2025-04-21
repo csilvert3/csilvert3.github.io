@@ -30,10 +30,11 @@ footer {
 .intro-pic {
     padding: 25px;
     width: 300px;
+    box-sizing: border-box;
 }
 
 .intro-list > html{
-    text-align: left !important;
+    text-align: left;
 }
 
 .nav2{
@@ -100,16 +101,16 @@ table, th, td{
 }
 
 input, textarea, select {
-  width: 60%;
+  width: 65%;
   height: 40px;
   padding: 10px;
   margin: 10px 0;
   font-size: 12px;
   border: 2px solid #ccc;
-  outline: none;
   text-align: left; 
   vertical-align: top;
   background-color: #f8f8f8;
+  box-sizing: border-box;
 }
 
 form label{
@@ -274,10 +275,11 @@ textarea {
   border: 2px solid transparent;
   transition: opacity 0.3s, border 0.3s;
   border-radius: 0; 
+  box-sizing: border-box;
 }
 
 .thumbnail:hover,
-.thumbnail.active {
+.active {
   opacity: 1;
   border: 2px solid #fff;
 }
