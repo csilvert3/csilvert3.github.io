@@ -284,6 +284,26 @@ textarea {
   border: 2px solid #fff;
 }
 
+.peers-ss {
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.ssc-container {
+  display: flex;
+  justify-content: center; 
+  width: 76%;
+  margin: 0 auto; 
+}
+
+.ssc-sub{
+  width: 33%;
+}
+
+.ssc-sub > ul{
+  text-align: left;
+}
+
 
 
 
