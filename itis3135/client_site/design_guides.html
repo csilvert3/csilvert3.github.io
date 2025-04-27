@@ -41,11 +41,6 @@
         Tools like the color wheel, accessibility checkers, and contrast ratios are essential when selecting colors that work across devices and for users with visual impairments. 
         CSS supports defining colors using keywords, HEX codes, RGB, HSL, and more, giving designers flexible ways to style elements.<br><br>
       </p>
-      <div class="container">
-        <h4>CSS Colors Example:</h4>
-        <button id="randomize-btn">Randomize Colors</button>
-        <button id="reset-btn">Reset Colors</button><br><br>
-      </div>
 
       <h2 id="positioning">CSS Positioning</h2>
       <p>
@@ -63,7 +58,45 @@
         Understanding how these parts interact is essential for layout and spacing. 
         For example, padding creates space inside an element, while margin adds space outside. 
         Misunderstanding the box model can lead to layout bugs, especially when using widths and heights with borders and padding.
-      </p>
+      </p><br><br>
+
+      <div class="container">
+        <h4>CSS Colors Examples:</h4>
+        <h5>Randomize Colors:</h5>
+        <button id="randomize-btn">Randomize Colors</button>
+        <button id="reset-btn">Reset Colors</button><br><br>
+        <h5>Individual Color Pickers:</h5>
+        <div class="pickers">
+          <div class="picker-item">
+            <label for="headerBg">Header Background</label>
+            <input type="color" id="headerBg">
+          </div>
+          <div class="picker-item">
+            <label for="headerText">Header Text</label>
+            <input type="color" id="headerText">
+          </div>
+          <div class="picker-item">
+            <label for="navBg">Nav Background</label>
+            <input type="color" id="navBg">
+          </div>
+          <div class="picker-item">
+            <label for="mainBg">Content Background</label>
+            <input type="color" id="mainBg">
+          </div>
+          <div class="picker-item">
+            <label for="sidebarBg">Sidebar Background</label>
+            <input type="color" id="sidebarBg">
+          </div>
+          <div class="picker-item">
+            <label for="footerBg">Footer Background</label>
+            <input type="color" id="footerBg">
+          </div>
+          <div class="picker-item">
+            <label for="textColor">Body Text Color</label>
+            <input type="color" id="textColor">
+          </div><br><br>
+        </div>
+      </div>
     </section>
     
 
@@ -92,5 +125,6 @@
     <script src="./scripts/randomizeColors.js"></script>
     <script src="./scripts/HTMLInclude.js"></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="./scripts/colorPicker.js"></script>
 </body>
 </html>

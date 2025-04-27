@@ -6,7 +6,8 @@ const originalColors = {
     buttonBackgroundColor: '#e0ff4f',
     topNavBackgroundColor: '#087e8b',
     footerBackgroundColor: '#0b3954',
-    footerTextColor: '#fff'
+    footerTextColor: '#fff',
+    sidebarRightBackgroundColor: 'e0ff4f'
   };
   
   function getRandomColor() {
@@ -48,16 +49,47 @@ const originalColors = {
     document.body.style.color = originalColors.bodyTextColor;
   
     const header = document.querySelector('header');
-    header.style.backgroundColor = originalColors.headerBackgroundColor;
-    header.style.color = originalColors.headerTextColor;
+    if (header) {
+      header.style.backgroundColor = originalColors.headerBackgroundColor;
+      header.style.color = originalColors.headerTextColor;
+    }
   
     const topNav = document.querySelector('.top-nav');
-    topNav.style.backgroundColor = originalColors.topNavBackgroundColor;
+    if (topNav) {
+      topNav.style.backgroundColor = originalColors.topNavBackgroundColor;
+    }
   
     const footer = document.querySelector('footer');
-    footer.style.backgroundColor = originalColors.footerBackgroundColor;
-    footer.style.color = originalColors.footerTextColor;
+    if (footer) {
+      footer.style.backgroundColor = originalColors.footerBackgroundColor;
+      footer.style.color = originalColors.footerTextColor;
+    }
+  
+    const sidebar = document.querySelector('.sidebar-left');
+    if (sidebar) {
+      sidebar.style.backgroundColor = originalColors.bodyBackgroundColor; 
+    }
+
+    const sidebarRight = document.querySelector('.sidebar-right');
+    if (sidebarRight) {
+      sidebarRight.style.backgroundColor = originalColors.bodyBackgroundColor; 
+    }
+
+    const mainContent = document.querySelector('.main-content');
+    if (mainContent) {
+      mainContent.style.backgroundColor = originalColors.bodyBackgroundColor;
+    }
+  
+    document.getElementById('headerBg').value = originalColors.headerBackgroundColor;
+    document.getElementById('headerText').value = originalColors.headerTextColor;
+    document.getElementById('navBg').value = originalColors.topNavBackgroundColor;
+    document.getElementById('mainBg').value = originalColors.bodyBackgroundColor;
+    document.getElementById('sidebarBg').value = originalColors.bodyBackgroundColor; 
+    document.getElementById('footerBg').value = originalColors.footerBackgroundColor;
+    document.getElementById('textColor').value = originalColors.bodyTextColor;
   }
+  
+  
   
   document.getElementById('randomize-btn').addEventListener('click', randomizeColors);
   document.getElementById('reset-btn').addEventListener('click', resetColors);
