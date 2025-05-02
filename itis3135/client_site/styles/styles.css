@@ -207,6 +207,10 @@
     display: block;
   }
 
+  .home-code {
+    display: inline;
+  }
+
   .hide-link{
     text-decoration: none;
     color: inherit;
