@@ -1,3 +1,4 @@
+// color picker
 document.addEventListener('DOMContentLoaded', () => {
     const mapping = {
       headerBg:   { sel: 'header', prop: 'backgroundColor' },
@@ -27,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (picker) picker.value = randomColor;
     });
   });
-  
+
+    // save default colors
     const defaults = {};
     Object.keys(mapping).forEach((id) => {
       const { sel, prop } = mapping[id];
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (el) defaults[id] = getComputedStyle(el)[prop];
     });
   
+    // update colors from picker
     Object.keys(mapping).forEach((id) => {
       const input = document.getElementById(id);
       if (!input) return;
@@ -46,17 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
-  
-    document.getElementById('resetColors').addEventListener('click', () => {
-      Object.keys(mapping).forEach((id) => {
-        const input = document.getElementById(id);
-        const { sel, prop } = mapping[id];
-        const def = defaults[id];
-        document.querySelectorAll(sel).forEach((el) => {
-          el.style[prop] = def;
-        });
-        input.value = rgbToHex(def);
-      });
-    });
+
   });
   

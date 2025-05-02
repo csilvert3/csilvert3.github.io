@@ -1,3 +1,4 @@
+// save original styling
 document.addEventListener('DOMContentLoaded', () => {
     const originalRules = [];
     Array.from(document.styleSheets).forEach((sheet) => {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // remove grid styling
     document.getElementById('removeBox')
             .addEventListener('click', () => {
       originalRules.forEach(({rule, priority}) => {
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // reset page
     document.getElementById('resetBox')
             .addEventListener('click', () => {
       originalRules.forEach(({rule, value, priority}) => {

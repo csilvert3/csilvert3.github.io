@@ -1,3 +1,4 @@
+// save original colors
 const originalColors = {
     bodyBackgroundColor: '#f7f7f7',
     bodyTextColor: '#333',
@@ -10,6 +11,7 @@ const originalColors = {
     sidebarRightBackgroundColor: 'e0ff4f'
   };
   
+  // pick random color
   function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -19,6 +21,7 @@ const originalColors = {
     return color;
   }
   
+  // randomize colors
   function randomizeColors() {
     const randomBodyBackgroundColor = getRandomColor();
     const randomBodyTextColor = getRandomColor();
@@ -44,6 +47,7 @@ const originalColors = {
     footer.style.color = randomFooterTextColor;
   }
   
+  // reset colors
   function resetColors() {
     document.body.style.backgroundColor = originalColors.bodyBackgroundColor;
     document.body.style.color = originalColors.bodyTextColor;
